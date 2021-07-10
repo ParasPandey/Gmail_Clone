@@ -53,10 +53,10 @@ const ComposeMail = ({ mail, subject, body }) => {
         uuid: uuidv4(),
       };
       const result = await emailjs.send(
-        "service_6013dmy",
-        "template_mzb66r6",
+//      your emailjs service id,
+//      your emailjs template id,
         dataObject,
-        "user_re2iWd4w83qvsNqYOBQbs"
+//      your emailjs user id
       );
       db.collection("users")
         .get()
