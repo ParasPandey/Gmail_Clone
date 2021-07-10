@@ -1,0 +1,55 @@
+.sidebar_options {
+  display: flex;
+  align-items: center;
+  color: grey;
+  /* margin-top: 1rem; */
+  padding: 3px;
+  padding-left: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+  border-bottom: 1px solid whitesmoke;
+}
+.sidebar_options > p {
+  display: none;
+
+  font-weight: 500px;
+  padding-right: 10px;
+}
+.sidebar_options > h4 {
+  flex: 1;
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: 500px;
+}
+.option_active {
+  background-color: #fce8e6;
+  color: #c04b37;
+}
+.option_active > p {
+  display: inline;
+}
+.sidebar_options:hover,
+.sidebar_options:hover > p,
+.sidebar_options:hover > h4,
+.option_active:hover,
+.option_active:hover > p,
+.option_active:hover > h4 {
+  background-color: #fcecec;
+  color: #c04b37;
+  font-weight: 800px;
+}
+.sidebar_options:hover > p {
+  display: inline;
+}
+@media only screen and (max-width: 610px) {
+  .slidebar .composeMail {
+    padding-left: 20px;
+  }
+  .slidebar .sidebar_options {
+    padding-left: 30px;
+  }
+  .slidebar_compose {
+    background-color: white !important;
+  }
+}

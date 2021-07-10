@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.app {
+  height: 100vh;
+}
+.home {
+  display: flex;
+  /* height: 100vh; */
+}
+
+/* for dark mode */
+.darkMode_on {
+  background-color: black;
+  color: white;
+}
+.darkMode_on .mail_row {
+  border-bottom: 1px solid grey;
+}
+.darkMode_on .mainbox_section {
+  border-bottom: 1px solid grey;
+}
+.darkMode_on .option_box {
+  margin-top: 15px;
+}
+.darkMode_on .MuiIconButton-root {
+  color: white;
+}
+.darkMode_on .showSlidebar {
+  background-color: black;
+}
+.darkMode_on .slidebar .composeMail button {
+  color: black;
+  background-color: white;
+  box-shadow: 1px 2px 5px 2px rgb(255 255 255 / 78%);
+}
+.darkMode_on .slidebar .composeMail button:hover {
+  background-color: white;
+  box-shadow: 3px 3px 10px 2px rgb(255 255 255 / 78%);
+}
+.darkMode_on .rnf_button button:hover {
+  /* background-color: white; */
+  box-shadow: 1px 1px 5px 2px rgb(255 255 255 / 78%);
+}
+/* .darkMode_on .myMail {
+  background-color: black !important;
+} */
+.darkMode_on .myMail .mail_header {
+  background-color: black;
+}
+.darkMode_on .myMail .mailbody {
+  background-color: black;
+}
+.darkMode_on
+  .myMail
+  .mailbody
+  .main_body
+  .main_body_message
+  .rnf_button
+  button {
+  background-color: white;
+}
+
+.darkMode_on .profileBox {
+  background-color: black;
+}
+/* .darkMode_on .MuiIconButton-root:hover {
+  box-shadow: 2px 2px 5px 2px rgb(255 255 255 / 78%);
+} */

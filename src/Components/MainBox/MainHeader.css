@@ -1,0 +1,25 @@
+.main_header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 400px) {
+  .main_header .MuiIconButton-root {
+    padding: 7px;
+  }
+  .main_header svg {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .main_header .MuiIconButton-root {
+    display: none;
+  }
+  .main_header .MuiIconButton-root.show_header {
+    display: inline-flex;
+  }
+}

@@ -1,0 +1,9 @@
+.mainbox {
+  flex: 1;
+  /* overflow: scroll; */
+  border-left: 1px solid whitesmoke;
+}
+.mainbox_section {
+  display: flex;
+  border-bottom: 1px solid whitesmoke;
+}

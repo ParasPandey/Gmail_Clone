@@ -1,0 +1,216 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  height: 60px;
+}
+
+.left_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_side .onofBtn {
+  display: none;
+}
+
+.left_side > img {
+  object-fit: contain;
+  height: 60px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.middle_side {
+  display: flex;
+  flex: 0.7;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3f4;
+  border-radius: 10px;
+}
+.middle_side input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+.middle_side .MuiSvgIcon-root {
+  color: gray;
+}
+.right_side {
+  display: flex;
+}
+
+.profileBox {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  box-shadow: 2px 4px 4px -2px rgba(0, 0, 0, 0.25);
+}
+.profileBox .apply_theame .dark_mode {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  border: 2px solid whitesmoke;
+}
+.profileBox .apply_theame .light_mode {
+  background-color: white;
+  color: black;
+  border: 2px solid whitesmoke;
+}
+.profileBox .apply_theame .light_mode:hover {
+  box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.profileBox .apply_theame .dark_mode:hover {
+  box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.profileBox img {
+  width: 80px;
+  border-radius: 50%;
+  margin: 0.5rem 0px;
+}
+.profileBox h4,
+h3 {
+  margin-bottom: 10px;
+}
+.profileBox button {
+  background-color: white;
+  padding: 12px 18px;
+  margin: 8px 0px;
+  border: 1px solid whitesmoke;
+  font-size: 14px;
+  font-weight: 600px !important;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.profileBox button:hover {
+  background-color: whitesmoke;
+}
+.profileBox .signoutBtn {
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
+.profileBox .signoutBtn:hover {
+  background-color: rgb(212, 62, 62);
+  box-shadow: 2px 4px 4px -2px rgba(238, 105, 105, 1);
+}
+.showProfileBox {
+  display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .MuiIconButton-root {
+    padding: 10px;
+  }
+  .middle_side {
+    flex: 0.8 1;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navbar .MuiIconButton-root {
+    padding: 8px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar .MuiIconButton-root {
+    padding: 5px;
+  }
+  .middle_side {
+    flex: 0.9 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .left_side .onofBtn {
+    display: block;
+  }
+  .navbar .MuiIconButton-root {
+    display: none;
+  }
+  .navbar .showIcon {
+    display: block;
+  }
+  .navbar .toggleBtn {
+    padding: 12px;
+  }
+  .profileBox {
+    height: 320px;
+    width: 320px;
+  }
+  .profileBox button {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .left_side > img {
+    display: none;
+  }
+  .navbar .toggleBtn {
+    padding: 15px;
+  }
+  .profileBox {
+    height: 310px;
+    width: 300px;
+  }
+  .navbar .right_side .my_Profile .MuiAvatar-root {
+    width: 35px;
+    height: 35px;
+  }
+  .profileBox img {
+    width: 75px;
+    margin: 0.5rem 0;
+  }
+  .profileBox h4,
+  h3 {
+    margin-bottom: 0px;
+  }
+  .profileBox button {
+    padding: 10px 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .profileBox {
+    height: 295px;
+    width: 280px;
+  }
+  .navbar .right_side .my_Profile .MuiAvatar-root {
+    width: 35px;
+    height: 35px;
+  }
+  .profileBox img {
+    width: 67px;
+  }
+  .profileBox h3 {
+    font-size: 1.1rem;
+  }
+  .profileBox h4 {
+    font-size: 1rem;
+  }
+  .profileBox .signoutBtn {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .profileBox {
+    height: 295px;
+    width: 95%;
+  }
+  .profileBox button {
+    padding: 10px 15px;
+  }
+  .profileBox .manageBtn {
+    padding: 10px 8px;
+  }
+}

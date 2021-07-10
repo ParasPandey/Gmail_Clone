@@ -1,0 +1,135 @@
+.mailbody {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  /* height: 100vh; */
+  box-shadow: 2px 5px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.mailbody .mailbody_header {
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 14px;
+}
+.main_body .main_body_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_body .main_body_header .leftside_header {
+  display: flex;
+  align-items: center;
+}
+.main_body .main_body_header .leftside_header > h5 {
+  margin-left: 5px;
+  color: gray;
+}
+.main_body .main_body_header .leftside_header .mail_profile {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main_body .main_body_header .rightside_header {
+  display: flex;
+  align-items: center;
+}
+.main_body .main_body_header .rightside_header > p {
+  font-size: 12px;
+  font-weight: 400px;
+}
+.main_body .main_body_message {
+  overflow-wrap: break-word;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 30px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.main_body .main_body_message .body_message_greeting p {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+  /* line-height: 20px; */
+}
+.main_body .main_body_message .body_message_greeting .greet {
+  font-size: 13px;
+}
+.main_body .main_body_message .body_message_text {
+  overflow-wrap: anywhere;
+  line-height: 20px;
+  margin-top: 6px;
+}
+.rnf_button {
+  margin-top: 30px;
+}
+.rnf_button button {
+  margin: 5px;
+  color: grey;
+}
+
+@media only screen and (max-width: 700px) {
+  .mailbody {
+    margin: 10px;
+    padding: 20px 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .rnf_button button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .main_body .main_body_message {
+    font-size: 15px;
+  }
+  .main_body .main_body_header .rightside_header .MuiIconButton-root {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .rnf_button button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .main_body .main_body_message {
+    font-size: 15px;
+  }
+  .main_body .main_body_header .rightside_header .MuiIconButton-root {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main_body .main_body_header .leftside_header .MuiIconButton-root {
+    padding: 5px;
+    padding-right: 8px;
+  }
+  .main_body
+    .main_body_header
+    .leftside_header
+    .MuiIconButton-root
+    .MuiAvatar-root {
+    width: 30px;
+    height: 30px;
+  }
+  .main_body .main_body_header .rightside_header .MuiIconButton-root {
+    padding: 5px;
+  }
+  .main_body .main_body_message {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+  }
+  .main_body .main_body_header .leftside_header .mail_profile p {
+    font-size: 14px;
+  }
+
+  .main_body .main_body_header .leftside_header .mail_profile h4 {
+    font-size: 15px;
+  }
+  .rnf_button button {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+  .rnf_button button .MuiSvgIcon-root {
+    width: 20px;
+  }
+  .main_body .main_body_message .body_message_greeting .greet {
+    font-size: 13px;
+  }
+}

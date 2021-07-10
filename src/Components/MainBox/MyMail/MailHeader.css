@@ -1,0 +1,46 @@
+.mail_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  height: 50px;
+}
+.mail_header .right_headerbox {
+  padding-right: 20px;
+}
+.mail_header .left_headerbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 830px) {
+  .right_headerbox {
+    display: none;
+  }
+  .left_headerbox {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .mail_header .MuiIconButton-root {
+    padding: 9px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .mail_header .MuiIconButton-root {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mail_header .MuiIconButton-root {
+    padding: 9px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mail_header .MuiIconButton-root {
+    display: none;
+  }
+  .mail_header .left_headerbox .MuiIconButton-root.main_icon {
+    display: inline;
+  }
+}
